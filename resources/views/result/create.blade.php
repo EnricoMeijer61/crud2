@@ -21,6 +21,7 @@
         @endif
 
     {!! Form::open(['route' => 'result.store', 'method' => 'POST']) !!}
+    {{csrf_field()}}
     @include('result.form')
     {!! Form::close() !!}
 @endsection

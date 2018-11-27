@@ -36,7 +36,7 @@
                     <a class="btn btn-xs btn primary" href="{{ route('result.edit', $gamedetail->id) }}">Edit</a>
 
                     {!! !Form::open(['method'=> 'DELETE', 'route'=>['result.destroy', $gamedetail->id],'style'=> 'display:inline']) !!}
-                    {!! Form::submit('Delete',['class'=>'btn btn-xs btn-danget' ]) !!}
+                    {!! Form::submit('Delete',['class'=>'btn btn-xs btn-danger' ]) !!}
                     {!! Form::close() !!}
                 </td>
             </tr>

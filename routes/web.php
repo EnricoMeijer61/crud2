@@ -49,7 +49,7 @@ Route::get('/index',[
     'uses' => 'gamedetailController@index'
 ]);
 
-Route::post('/update/{id}',[
+Route::patch('/update/{id}',[
     'as' => 'result.update',
     'uses' => 'gamedetailController@update'
 ]);
