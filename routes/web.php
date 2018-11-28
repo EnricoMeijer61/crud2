@@ -53,3 +53,8 @@ Route::patch('/update/{id}',[
     'as' => 'result.update',
     'uses' => 'gamedetailController@update'
 ]);
+
+Route::get('/destroy/{id}',[
+    'as' => 'result.destroy',
+    'uses' => 'gamedetailController@destroy'
+]);

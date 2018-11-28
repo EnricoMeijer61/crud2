@@ -94,9 +94,12 @@ class GamedetailController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request,$id)
+    public function destroy($id)
     {
-        $gamedetail::find($id)->delete();
-        return redirect()->route('result.index')->with('succes', ' RESult deleted');
+        Gamedetail::find($id)->delete();
+        return redirect()->route('result.index');
+//        return view('welcome');
+//        return redirect()->route('result.index')->with('succes', ' RESult deleted');
+//
     }
 }
